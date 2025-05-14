@@ -35,10 +35,10 @@ public class DocumentMerger {
             outputDoc.appendChild(newSection);
             // 通常，新创建的 Section 会自动包含一个 Body。
             // 如果需要，还可以检查并添加 Body:
-            // if (newSection.getBody() == null) {
-            //    Body body = new Body(outputDoc);
-            //    newSection.appendChild(body);
-            // }
+             if (newSection.getBody() == null) {
+                Body body = new Body(outputDoc);
+                newSection.appendChild(body);
+             }
             logger.debug("Ensured output document has an initial section after removeAllChildren.");
         }
         // ----> 新增代码结束 <----
