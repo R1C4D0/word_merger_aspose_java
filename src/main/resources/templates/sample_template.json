@@ -1,0 +1,31 @@
+{
+    "template_name": "Sample_Merge_Template",
+    "output_filename_prefix": "Merged_Report",
+    "output_directory": "./output",
+    "output_document_properties": {
+        "title": "Merged Document",
+        "author": "Word Merger Tool"
+    },
+    "chapters_to_merge": [
+        {
+            "source_document_path": "E:/IdeaProjects/word_merger_aspose/src/main/resources/docs/intro.docx",
+            "chapter_identifier_type": "name",
+            "chapter_identifier_value": "Introduction",
+            "chapter_identifier_case_sensitive": false,
+            "order_in_merged_document": 2,
+            "target_heading_level": 1,
+            "include_subsections": true,
+            "on_chapter_not_found": "error"
+        },
+        {
+            "source_document_path": "E:/IdeaProjects/word_merger_aspose/src/main/resources/docs/requirements.docx",
+            "chapter_identifier_type": "number",
+            "chapter_identifier_value": "1",
+            "order_in_merged_document": 1,
+            "target_heading_level": 1,
+            "include_subsections": true,
+            "insert_page_break_after": true
+        }
+    ],
+    "default_on_chapter_not_found": "error"
+}
